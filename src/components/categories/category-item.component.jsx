@@ -8,8 +8,8 @@ const CategoryItem = ({category})=>{
           <div className="background-image" style={{backgroundImage: `url(${ImageSRC})`}} >
             <div className="category-body-container" >
               <div className="category-body-container-text">
-                <h2>{title}</h2>
-                <p>check</p>
+                <h3>{title}</h3>
+                <p>see more!</p>
               </div>
               </div>
           </div>

@@ -33,19 +33,27 @@
       }
   
       .category-body-container {
-        display: flex;
-        background: rgba(255, 255, 255, 0.5);
-        width: 23%;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.4;
+        height: 100px;
+
+        background: rgba(255, 255, 255, 0.8);
+        opacity: 0.5;
+        padding: 0 5% 0 5%;
         transition: opacity 0.3s ease, transform 0.3s ease; 
-        
         border-radius: 0.5em;
   
         .category-body-container-text {
-          padding: 1px;
-          text-align: center;
+            display: flex;
+            flex-direction: column;
+            font-family: "Encode Sans Condensed", sans-serif;
+            font-size: 22px;
+            font-style: normal;
+            text-align: center;
+
+            p{
+                margin-top: -20px;
+                font-weight: 400;
+                font-size: 10px;
+            }
         }
       }
     }
