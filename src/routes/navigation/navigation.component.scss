@@ -1,6 +1,8 @@
+@import '../../assets/color-assets/_vars.scss.scss';
+
 .navigation{
     display: flex;
-    background: rgb(202, 202, 202);
+    background: $main-header-color;
     height: 70px;
     
     .nav-container{
@@ -22,6 +24,7 @@
 
     
         .nav-links-container{
+            color: $main-text-color;
             width: 100%;
             display: flex;
             justify-content: end;
@@ -29,9 +32,6 @@
             .nav-link{
                 text-decoration:none;
                 padding-left: 1%;
-                &:hover{
-                
-                }
             }
         }
     }

@@ -1,4 +1,8 @@
+@import './assets/color-assets/vars.scss';
+
 body {
+  background-color: $main-background-color;
+  color: $main-text-color;
   margin: 0;
   font-family: "Encode Sans Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
