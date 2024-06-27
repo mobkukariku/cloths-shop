@@ -1,0 +1,42 @@
+@import '../../assets/color-assets/vars.scss';
+
+.button-container{
+    height: 40px;
+    font-size: 15px;
+
+    border-radius: 0.5em;
+    transition: 200ms all;
+    padding: 0 18px;
+}
+
+.default-btn{
+
+    background: $main-component-color;
+    border: 2px solid $main-component-color;
+
+    &:hover{
+        border: 2px solid $main-component-color;
+        background: $main-background-color;
+    }
+
+    &:active{
+        background: $main-component-color;
+    }
+}
+
+.googlge-sign-in-btn{
+    color: white;
+    background: rgb(66 133 244);
+
+    border: 2px solid rgb(66 133 244);
+
+    &:hover{
+        color: rgb(66 133 244);
+        background: $main-background-color;
+    }
+
+    &:active{
+        color: white;
+        background: rgb(66 133 244);
+    }
+}

@@ -1,8 +1,8 @@
 @import '../../assets/color-assets/vars.scss';
 
 @mixin shrinkLabel {
-    top: -60%;
-    font-size: 16px;
+    top: -80%;
+    font-size: 18px;
     color: black;
   }
 
@@ -14,12 +14,13 @@
         border: none;
         background-color: white;
         display: block;
-        width: 20%;
+        width: 110%;
         height: 35px;
-        font-size: 18px;
+        font-size: 14px;
         font-size: 1;
-        margin: 3% 0;
+        margin: 20% 0 11% 0;
         border-radius: 0;
+        padding-left: 1%;
         border-bottom: 1px solid $context-component-color;
 
         &:focus {

@@ -1,7 +1,10 @@
+import { Route, Routes } from "react-router-dom";
 import Home from "./routes/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
-import { Route, Routes } from "react-router-dom";
-import SignIn from "./routes/sign-in/sign-in.component";
+import Auth from "./routes/authentication/authentication.component";
+import UserProfile from "./routes/profile/profile.component";
+
+
 
 const Shop = () =>{
   return(<h1>hhahahah</h1>);
@@ -13,7 +16,8 @@ const App = () => {
       <Route path="/" element={<Navigation />}> 
         <Route index element={<Home />}/>
         <Route path="shop" element={<Shop />} />
-        <Route path="sign-in" element={<SignIn />} />
+        <Route path="auth" element={<Auth />} />
+        <Route path="profile" element={<UserProfile />} />
       </Route>
     </Routes>
   );

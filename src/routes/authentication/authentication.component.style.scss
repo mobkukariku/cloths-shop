@@ -1,0 +1,11 @@
+.auth-container{
+    width: 70%;
+    margin: 7% 15%;
+
+    .auth-contents{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+}
