@@ -1,0 +1,53 @@
+@import '../../assets/color-assets/vars.scss';
+.product-card-container{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    transition: transform 0.2s ease;
+
+    img{
+        width: 280px;
+        height: 300px;
+    }
+
+    .product-card-footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: -60px;
+
+
+        Button{
+            margin-bottom: 20px;
+            opacity: 0;
+            background: none;
+
+            &:active{
+                background: $main-background-color;
+            }
+        }
+
+        .product-card-text{
+            display: flex;
+            flex-direction: row;
+            gap: 180px;
+        }
+    }
+
+    &:hover{
+        Button{
+            cursor: pointer;
+            margin-bottom: 20px;
+            opacity: 1;
+            background:  $main-component-color;
+
+        }
+
+        transform: scale(1.1); 
+    }
+}

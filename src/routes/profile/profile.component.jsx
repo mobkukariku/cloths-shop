@@ -65,7 +65,6 @@ const UserProfile = () => {
                         displayName: userData.displayName || '',
                         email: userData.email || '',
                         birthday: userData.birthday || '00.00.0000',
-
                         profileIMG: userData.profileIMG || 'https://firebasestorage.googleapis.com/v0/b/cloths-shop-db-3fac7.appspot.com/o/profileImages%2FdefaultIMG%2FFrame%201.png?alt=media&token=c0a8a655-1fe7-449b-9baa-5339ea436b7a'
                     });
                 }
@@ -83,6 +82,7 @@ const UserProfile = () => {
                     <input id="fileInput" type="file" onChange={handleImageChange} accept="image/*" name="profileIMG" style={{ display: "none" }} />
                 </div>
                 <div className="form-input-text">
+                    <p>PROFILE</p>
                     <FormInput label="Name" type="text" required onChange={handleChange} name="displayName" value={displayName} />
                     <FormInput label="Birthday" type="date" required onChange={handleChange} name="birthday" value={birthday} />
                     <Button buttonType="default" childrenText="Change"/>

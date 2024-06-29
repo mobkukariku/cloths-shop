@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import DirectoryCategory from "../../components/directory/directory.component";
 import "./home.component.style.scss"
+import HomeBanner from "../../components/banner/banner.home.component";
 
 const Home = () => {
 
@@ -35,6 +36,7 @@ const Home = () => {
 
   return (
    <div>
+    <HomeBanner />
     <div className="directory-title"><p>BE ON TREND WITH US</p></div>
     <DirectoryCategory categories={categories} />
     <Outlet />

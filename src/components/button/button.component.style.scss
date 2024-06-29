@@ -40,3 +40,19 @@
         background: rgb(66 133 244);
     }
 }
+
+.reverse-btn{
+
+    background: $main-background-color;
+    border: 2px solid $main-component-color;
+
+    &:hover{
+        border: 2px solid $main-component-color;
+        background: $main-component-color;
+    }
+
+    &:active{
+        background: $main-background-color;
+    }
+
+}

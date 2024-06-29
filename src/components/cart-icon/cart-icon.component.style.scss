@@ -1,0 +1,12 @@
+.cart-icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+
+    .item-count{
+        font-size: 10px;
+        margin-bottom: -4px;
+    }
+}
