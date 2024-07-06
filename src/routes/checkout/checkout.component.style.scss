@@ -1,0 +1,41 @@
+@import '../../assets/color-assets/vars.scss';
+.checkout-container{
+    background: $main-header-color;
+    width: 1300px;
+    margin: 5% auto;
+    padding-bottom: 10px;
+    border-radius: 0.5em;
+
+    .checkout-cart-title{
+        background: none;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 5%
+    }
+    
+}
+.total-price-container{
+    display: flex;
+    justify-content: end;
+    padding: 0 15%;
+    margin-top: -3%;
+}
+
+
+.total-price{
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    background:$main-header-color;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    
+    span{ 
+        display: flex;
+        font-size: 600;
+        font-size: 20px;
+
+    }
+
+}

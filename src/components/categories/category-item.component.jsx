@@ -9,7 +9,7 @@ const CategoryItem = ({category})=>{
             <div className="category-body-container" >
               <div className="category-body-container-text">
                 <h3>{title}</h3>
-                <p>see more!</p>
+                
               </div>
               </div>
           </div>

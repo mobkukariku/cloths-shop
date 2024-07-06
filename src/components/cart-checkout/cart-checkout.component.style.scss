@@ -1,0 +1,37 @@
+@import '../../assets/color-assets/vars.scss';
+
+
+.cart-checkout-container{
+    background:$main-component-color;
+    border-radius: 0.5em;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 0.4fr;
+    img{
+        height: 180px;
+        width: 170px;
+        object-fit: contain;
+        background: white;
+    }
+
+    .inc-degre-container{
+        display: flex;
+        font-size: 25px;
+        gap: 20px;
+
+        span{
+            cursor: pointer;
+        }
+    }
+
+    .delete-btn{
+        font-weight: 400;
+        font-size: 40px;
+        cursor: pointer;
+    }
+}

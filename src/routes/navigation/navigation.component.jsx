@@ -24,6 +24,11 @@ const Navigation = () =>{
                     </div>
                 </Link>
                 <div className="nav-links-container">
+                    {currentUser ? (
+                        <div className="profile-links">
+                            <Link className="nav-link" to='/add-item'>ADD</Link>
+                        </div>
+                    ) : ('')}
                     <Link className="nav-link" to="/shop"> 
                     SHOP
                     </Link>

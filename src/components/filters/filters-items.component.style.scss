@@ -1,0 +1,84 @@
+@import '../../assets/color-assets/vars.scss';
+
+.filltered-containers {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 20px;
+    grid-template-columns: 0.1fr 1fr 1fr;
+
+    .filters-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: $main-header-color;
+        border-radius: 0.5em;
+        padding: 20px;
+
+        width: 300px;
+
+        .filter-from-to {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            
+            input {
+                border: none;
+                border-radius: 0.5em;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .filters-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .form-checkboxes-container {
+                font-size: 16px;
+                background-color: white;
+                border-radius: 0.6em;
+                padding: 15px;
+                align-items: center;
+                display: flex;
+
+                .form-checkboxes{
+                display: flex;
+                gap: 14px;
+                flex-direction: column;
+                }
+                .form-checkboxes-labels{
+                display: flex;
+                gap: 14px;
+                margin-left: 40px;
+                position: absolute;
+                z-index: 0;
+                flex-direction: column;
+                }
+
+                input {
+                    margin-left: 10px;
+                }
+            }
+
+            Button {
+                width: 60%;
+                margin: 0 20%;
+            }
+        }
+    }
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.products-cards {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 50px;
+}

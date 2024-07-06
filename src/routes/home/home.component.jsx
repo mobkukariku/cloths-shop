@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import DirectoryCategory from "../../components/directory/directory.component";
 import "./home.component.style.scss"
 import HomeBanner from "../../components/banner/banner.home.component";
+import CardsSlider from "../../components/cards-slider/cards-slider.component";
 
 const Home = () => {
 
@@ -35,10 +36,11 @@ const Home = () => {
 
 
   return (
-   <div>
+   <div className="home-component-container">
     <HomeBanner />
     <div className="directory-title"><p>BE ON TREND WITH US</p></div>
     <DirectoryCategory categories={categories} />
+    <CardsSlider />
     <Outlet />
    </div>
   );

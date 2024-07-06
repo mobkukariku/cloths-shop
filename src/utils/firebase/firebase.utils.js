@@ -115,3 +115,5 @@ export const uploadProfileImage = async (userAuth, file) =>{
     return downloadURL;
 
 }
+
+export const storage = getStorage();

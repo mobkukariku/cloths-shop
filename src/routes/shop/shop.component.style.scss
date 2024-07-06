@@ -1,16 +1,4 @@
-.products-container{
-    display: flex;
-    width: 70%;
-    margin: 5% 15%;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-.products-cards{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
-    row-gap: 50px;
+.shop-container{
+    width: 1300px;
+    margin: 5% auto;
 }
