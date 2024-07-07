@@ -82,3 +82,92 @@
     column-gap: 20px;
     row-gap: 50px;
 }
+
+@media (max-width: 768px){
+    .filltered-containers {
+        display: grid;
+        grid-template-columns: 2fr;
+        gap: 20px;
+    
+        .filters-container {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin: 0 5%;
+            justify-content: center;
+            background: $main-header-color;
+            border-radius: 0.2em;
+            padding: 0 0 10px;
+            height: 100%;
+    
+    
+            .filter-from-to {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                
+                input {
+                    border: none;
+                    border-radius: 0.5em;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+    
+            .filters-form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+    
+                .form-checkboxes-container {
+                    font-size: 12px;
+                    background-color: white;
+                    border-radius: 0.6em;
+                    height: 120px;
+                    width: 100%;
+                    align-items: center;
+                    display: flex;
+    
+                    .form-checkboxes{
+                    display: flex;
+                    gap: 7px;
+                    flex-direction: column;
+                    }
+                    .form-checkboxes-labels{
+                    display: flex;
+                    gap: 12px;
+                    margin-left: 40px;
+                    position: absolute;
+                    z-index: 0;
+                    flex-direction: column;
+                    }
+    
+                    input {
+                        margin-left: 10px;
+                    }
+                }
+    
+                Button {
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    
+    .products-container {
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .products-cards {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        column-gap: 20px;
+        row-gap: 50px;
+    }
+}

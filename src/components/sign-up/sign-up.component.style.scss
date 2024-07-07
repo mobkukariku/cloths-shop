@@ -6,3 +6,13 @@
 }
 
 
+@media (max-width: 768px){
+    .sign-up-form-content{
+        width: 70%;
+        margin: 0 8%;
+        Button{
+            width: 40%;
+            margin: 0 35%;
+        }
+    }
+}

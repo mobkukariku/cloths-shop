@@ -4,3 +4,10 @@
     margin: 3% auto;
     justify-content: center;
 }
+
+@media (max-width: 768px){
+    .add-items-container{
+    width: 100%;
+    margin: 3% 0;
+}
+}

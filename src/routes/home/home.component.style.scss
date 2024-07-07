@@ -11,3 +11,16 @@
     margin: auto;
     width: 1920px;
 }
+
+@media (max-width: 768px){
+    .home-component-container{
+        width: 100%;
+       
+    }
+
+    .directory-title{
+        p{
+            font-size: 30px;
+        }
+    }
+}

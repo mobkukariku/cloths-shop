@@ -29,3 +29,36 @@
         margin: 10% 20% 0 20%;
     }
   }
+  @media (max-width: 768px){
+    .cart-dropdown-container {
+      position: absolute;
+      width: 240px;
+      height: 340px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin-right: -20px;
+      border: 1px solid black;
+      background-color: white;
+      top: 90px;
+      right: 40px;
+      z-index: 5;
+  
+      .empty-message {
+        font-size: 18px;
+        margin: 50px auto;
+      }
+    
+      .cart-items {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+      }
+    
+      button {
+          width: 60%;
+          margin: 10% 20% 0 20%;
+      }
+    }
+  }

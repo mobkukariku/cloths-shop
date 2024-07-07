@@ -37,3 +37,26 @@
         }
     }
 }
+
+@media (max-width: 768px){
+    .footer-container{
+        padding: 5%;
+        width: 90%;
+        font-size: 12px;
+        .footer-aboutUs{
+            width: 200px;
+    
+            p{
+                font-size: 20px;
+            }
+        }
+    
+        .footer-contact{
+            p{
+                font-size: 20px;
+            }
+    
+
+        }
+    }
+}

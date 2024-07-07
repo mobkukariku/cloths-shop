@@ -8,4 +8,21 @@
     }
 }
 
+@media (max-width: 768px){
+    .sign-in-form-content{
+
+        h1{
+            text-align: center;
+        }
+        width: 70%;
+        margin: 0 8%;
+        .sign-in-buttons{
+            margin-left: 10%;
+            display: flex;
+            gap: 2%;
+            justify-content: center;
+        }
+    }
+    
+}
 

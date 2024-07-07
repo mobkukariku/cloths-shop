@@ -5,7 +5,7 @@ import './footer.component.style.scss'
 
 const Footer  = ()=>{
     return(
-        <div className='footer-background'>
+        <footer className='footer-background'>
             <div className='footer-container'>
             <div className='footer-aboutUs'>
                 <p>ABOUT US</p>
@@ -24,7 +24,7 @@ const Footer  = ()=>{
                 </div>
             </div>
         </div>
-        </div>
+        </footer>
     )
 }
 export default Footer;

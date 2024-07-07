@@ -35,3 +35,41 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 768px){
+
+.cart-checkout-container{
+    background:$main-component-color;
+    border-radius: 0.5em;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+	grid-template-columns: 1.2fr 1fr 1fr 1fr 0.4fr;
+    img{
+        height: 80px;
+        width: 80px;
+        object-fit: contain;
+        background: white;
+    }
+
+    .inc-degre-container{
+        display: flex;
+        font-size: 12px;
+        gap: 5px;
+
+        span{
+            cursor: pointer;
+        }
+    }
+
+    .delete-btn{
+        font-weight: 400;
+        font-size: 20px;
+        cursor: pointer;
+    }
+}
+}

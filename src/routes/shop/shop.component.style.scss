@@ -2,3 +2,11 @@
     width: 1300px;
     margin: 5% auto;
 }
+
+@media (max-width: 768px){
+    .shop-container{
+        width: 100%;
+        margin: 5% 0;
+    }
+    
+}
