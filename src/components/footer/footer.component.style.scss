@@ -1,0 +1,39 @@
+@import '../../assets/color-assets/vars.scss';
+
+
+.footer-background{
+    background: $main-header-color;
+}
+.footer-container{
+    padding: 1% 15%;
+    display: flex;
+    font-weight: 200;
+    justify-content: space-between;
+    .footer-aboutUs{
+        width: 550px;
+
+        p{
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 1%;
+        }
+    }
+
+    .footer-contact{
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+        align-items: end;
+
+        p{
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .footer-contact-links{
+            display: flex;
+            gap: 10px;
+        }
+    }
+}

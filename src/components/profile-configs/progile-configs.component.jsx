@@ -24,7 +24,6 @@ const ProfileConfigs = () => {
     };
 
     const handleImageChange = async (e) => {
-        e.preventDefault();
         const file = e.target.files[0];
         if (file) {
             try {
