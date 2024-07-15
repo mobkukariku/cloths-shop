@@ -6,6 +6,7 @@ import { UserProvider } from './contexts/user.context';
 import { ProductsProvider } from './contexts/products.context';
 import { CartProvider } from './contexts/cart.context';
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './index.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

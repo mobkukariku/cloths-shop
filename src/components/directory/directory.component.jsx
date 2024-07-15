@@ -1,9 +1,8 @@
 import CategoryItem from "../categories/category-item.component";
-import "./directory.component.styles.scss"
 
 
 const DirectoryCategory = ({categories}) =>(
-    <div className="categories-containers">
+    <div className="d-flex flex-wrap container categories-containers">
       {categories.map((category)=>(
         <CategoryItem key={category.id} category={category}/>
       ))}

@@ -3,15 +3,14 @@ import { Swiper , SwiperSlide } from "swiper/react";
 import { useContext } from 'react';
 import ProductCard from '../product-card/product-card.component';
 import { ProductsContexts } from '../../contexts/products.context';
-import './cards-slider.component.style.scss'
 import 'swiper/swiper-bundle.css';
 
 const CardsSlider = () => {
     const { products } = useContext(ProductsContexts);
   
     return (
-      <div className='card-swiper-container'>
-        <p>MOST POPULAR</p>
+      <div className='card-swiper-container container my-5'>
+        <p className='fs-1 fw-semibold text-center'>MOST POPULAR</p>
         <Swiper
           modules={[Navigation, A11y]}
           slidesPerView={4}

@@ -1,0 +1,12 @@
+@import '../../assets/color-assets/_vars.scss';
+
+.navigation {
+    background: $main-header-color;
+
+    .logo-container{
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

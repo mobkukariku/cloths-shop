@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import DirectoryCategory from "../../components/directory/directory.component";
-import "./home.component.style.scss"
 import HomeBanner from "../../components/banner/banner.home.component";
 import CardsSlider from "../../components/cards-slider/cards-slider.component";
 import Footer from "../../components/footer/footer.component";
@@ -37,13 +36,16 @@ const Home = () => {
 
 
   return (
-   <div className="home-component-container">
+   <div className="container">
     <HomeBanner />
-    <div className="directory-title"><p>BE ON TREND WITH US</p></div>
-    <DirectoryCategory categories={categories} />
+    <div className="">
+    <div className="my-5">
+      <div className="text-center fs-1 fw-semibold directory-title"><p>BE ON TREND WITH US</p></div>
+      <DirectoryCategory categories={categories} />
+    </div>
     <CardsSlider />
-    <Footer />
     <Outlet />
+    </div>
    </div>
   );
 }

@@ -14,17 +14,17 @@ const CartDropDown = () =>{
     }
 
     return (
-        <div className='cart-dropdown-container'>
+        <div className='rounded bg-light px-3 p-3 my-2 position-absolute z-3'>
           <div className='cart-items'>
             {cartItems.length ? (
               cartItems.map((cartItem) => (
                 <CartItem key={cartItem.id} cartItem={cartItem} />
               ))
             ) : (
-              <span className='empty-message'>Your cart is empty</span>
+              <span className="text-center m-5">Your cart is empty</span>
             )}
           </div>
-          <Button childrenText="TO CHECKOUT" onClick={handleCartDropdown} buttonType="default"/>
+          <div className="d-flex py-3 justify-content-center"><Button childrenText="TO CHECKOUT" onClick={handleCartDropdown} buttonType="default"/></div>
         </div>
       );
     };

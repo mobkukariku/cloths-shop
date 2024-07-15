@@ -3,10 +3,9 @@ import { Fragment, useContext } from "react";
 import { UserContext } from "../../contexts/user.context";
 import { CartContext } from "../../contexts/cart.context";
 import {ReactComponent as Logo} from "../../assets/logo.svg"
-import ProfileImage from "../../components/profile-image/profile-image.component";
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartDropDown from "../../components/cart-dropdown/cart-dropdown.component";
-import "./navigation.component.scss"
+import './navigation.component.style.scss'
 
 const Navigation = () =>{
 
@@ -16,31 +15,27 @@ const Navigation = () =>{
     return(
         <div>
             <Fragment>
-            <div className="navigation">
-                <div className="nav-container">
-                <Link className="nav-logo-container" to="/">
-                    <div className="nav-logo">
+            <div className="navigation ">
+                <div className="container  ">
+                <div className="container  d-flex justify-content-between flex-row">
+                <Link className="logo-container" to="/">
                         <Logo className='logo' />
-                    </div>
                 </Link>
-                <div className="nav-links-container">
+                <div className="d-flex align-items-center  gap-3 " >
+                    {currentUser ? (<Link className="btn" to='/add-item'>ADD</Link>) : ('')}
+                    <Link className="btn" to="/shop"> SHOP</Link>
                     {currentUser ? (
-                        <div className="profile-links">
-                            <Link className="nav-link" to='/add-item'>ADD</Link>
-                        </div>
-                    ) : ('')}
-                    <Link className="nav-link" to="/shop"> 
-                    SHOP
-                    </Link>
-                    {currentUser ? (
-                        <div className="profile-links">
-                            <Link className="nav-link" to="/profile"> PROFILE</Link>
+                        <div className="d-flex align-items-center gap-3">
+                            <Link className="btn" to="/profile"> PROFILE</Link>
                             <CartIcon />
                         </div>
-                        ) : ( <Link className="nav-link" to="/auth"> SIGN IN</Link>)}
+                        ) : ( <Link className="btn" to="/auth"> SIGN IN</Link>)}
                 </div>
                 </div>
+                <div className="d-flex justify-content-end">
                 {isCartOpen && <CartDropDown />}
+                </div>
+                </div>
             </div>
             </Fragment>
             <Outlet />
